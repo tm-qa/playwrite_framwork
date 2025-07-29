@@ -1,1 +1,1 @@
-[{"uid":"668f136898649c75","name":"Ninja login Test","time":{"start":1753779462227,"stop":1753779488112,"duration":25885},"status":"passed","severity":"normal"}]
+[{"uid":"83b9124bf1d53f2b","name":"Ninja login Test new","time":{"start":1753780175415,"stop":1753780206221,"duration":30806},"status":"broken","severity":"normal"},{"uid":"9be0c053758132d5","name":"Ninja login Test","time":{"start":1753782337088,"stop":1753782362044,"duration":24956},"status":"passed","severity":"normal"}]
