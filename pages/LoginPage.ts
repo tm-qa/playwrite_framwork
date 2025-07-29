@@ -37,23 +37,18 @@ export class NinjaPage {
 
   console.log(' Email and password submitted');
 
- let isEmpIdVisible = false;
 try {
-  await popup.locator('input[placeholder="Enter your employee ID"]').waitFor({ timeout: 5000 });
-  isEmpIdVisible = true;
+  const empIdInput = this.page.getByPlaceholder('Enter your employee ID');
+  await empIdInput.waitFor({ state: 'visible', timeout: 5000 });
+  await empIdInput.fill('FBS4825');
+  await this.page.getByRole('button', { name: 'Next' }).click();
+  console.log(' Employee ID entered successfully.');
 } catch (e) {
-  console.log('Employee ID input not found within 5s. Skipping...');
+  console.log('Employee ID input not found or not visible.');
+  const screenshot = await this.page.screenshot();
+  attachment('Emp ID Screen Failure', screenshot, 'image/png');
 }
 
-
-
-
-if (isEmpIdVisible) {
-  await this.page.getByPlaceholder('Enter your employee ID').fill('123456');
-  await this.page.getByRole('button', { name: 'Submit' }).click();
-} else {
-  console.log('Employee ID screen not shown. Continuing...');
-}
 
 
 await this.page.waitForTimeout(10000);
