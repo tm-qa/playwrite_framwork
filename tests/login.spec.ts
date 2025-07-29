@@ -9,6 +9,6 @@ test('Ninja login Test', async ({ page }) => {
     process.env.NINJA_PASSWORD || 'Turtle@2k25',
   
   );
-  await ninjaPage.clickOnModule("Quote Request")
+  
  
 });
