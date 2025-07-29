@@ -38,7 +38,7 @@ export class NinjaPage {
   console.log(' Email and password submitted');
 
 try {
-  const empIdInput = this.page.getByPlaceholder('Enter your employee ID');
+  const empIdInput = await this.page.locator('input[placeholder="Enter your employee ID"]');
   await empIdInput.waitFor({ state: 'visible', timeout: 5000 });
   await empIdInput.fill('FBS4825');
   await this.page.getByRole('button', { name: 'Next' }).click();
