@@ -37,7 +37,7 @@ export class NinjaPage {
 
   console.log(' Email and password submitted');
 
- const isEmpIdScreenVisible = await this.page.locator('text=Please enter your Employee ID')
+ const isEmpIdScreenVisible = await this.page.locator('//input[@aria-label="Employee ID"]')
   .waitFor({ state: 'visible', timeout: 10000 })
   .then(() => true)
   .catch(() => false);
