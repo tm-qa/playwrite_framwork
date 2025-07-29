@@ -1,0 +1,3 @@
+Navigated to Ninja login page
+✅ Google login popup opened
+✅ Email and password submitted

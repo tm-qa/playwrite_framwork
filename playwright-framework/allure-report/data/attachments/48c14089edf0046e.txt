@@ -1,0 +1,5 @@
+Navigated to Ninja login page
+✅ Google login popup opened
+✅ Email and password submitted
+❗ Account chooser not shown – maybe auto-redirected
+✅ Screenshot captured on Ninja

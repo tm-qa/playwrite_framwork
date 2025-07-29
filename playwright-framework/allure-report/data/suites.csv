@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","9233","Ninja login via Gmail","","Mon Jul 28 11:54:58 IST 2025","passed","Mon Jul 28 11:55:07 IST 2025","","login.spec.ts","",""
+"","25744","Ninja login via Gmail","chromium","Mon Jul 28 17:08:15 IST 2025","passed","Mon Jul 28 17:08:41 IST 2025","","login.spec.ts","",""
+"","30748","Login Test","","Mon Jul 28 11:43:04 IST 2025","broken","Mon Jul 28 11:43:35 IST 2025","","login.spec.ts","",""
