@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
 import { NinjaPage } from '../pages/LoginPage';
 
-test('Ninja login via Gmail', async ({ page }) => {
+test('Ninja login Test', async ({ page }) => {
   const ninjaPage = new NinjaPage(page);
 
   await ninjaPage.loginToGmailAndNinja(

@@ -20,14 +20,13 @@ export class NinjaPage {
     attachment('Login Page Screenshot', screenshot, 'image/png');
 
    const [popup] = await Promise.all([
-    this.page.context().waitForEvent('page'), // listens for new popup
-    this.page.locator('//span/a[@id="google-signin-button"]').click() // triggers popup
+    this.page.context().waitForEvent('page'), 
+    this.page.locator('//span/a[@id="google-signin-button"]').click() 
   ]);
 
   await popup.waitForLoadState('load');
   console.log('Google login popup opened');
 
-  // Fill email
   await popup.locator('#identifierId').fill(email);
   debugger;
   await popup.locator('#identifierNext').click();
