@@ -37,14 +37,18 @@ export class NinjaPage {
 
   console.log(' Email and password submitted');
 
- const isEmpIdScreenVisible = await this.page.locator('//input[@aria-label="Employee ID"]')
-  .waitFor({ state: 'visible', timeout: 10000 })
-  .then(() => true)
-  .catch(() => false);
+ let isEmpIdVisible = false;
+try {
+  await popup.locator('input[placeholder="Enter your employee ID"]').waitFor({ timeout: 5000 });
+  isEmpIdVisible = true;
+} catch (e) {
+  console.log('Employee ID input not found within 5s. Skipping...');
+}
 
 
 
-if (isEmpIdScreenVisible) {
+
+if (isEmpIdVisible) {
   await this.page.getByPlaceholder('Enter your employee ID').fill('123456');
   await this.page.getByRole('button', { name: 'Submit' }).click();
 } else {
