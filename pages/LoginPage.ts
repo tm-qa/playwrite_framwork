@@ -47,7 +47,7 @@ async clickOnModule (module : string ){
   const moduleLocator = this.page.locator('a[data-auto="qis-module"]');
   await moduleLocator.waitFor({ state: 'visible', timeout: 5000 });
   await moduleLocator.click();
-  console.log('✅ Clicked on Quote Request module');
+  console.log(' Clicked on Quote Request module');
 
   attachment('Login Page Screenshot', screenshot1, 'image/png');
 
