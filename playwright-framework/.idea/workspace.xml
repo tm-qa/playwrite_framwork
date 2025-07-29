@@ -5,50 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aeded514-12aa-4405-a1dd-c3cee51ecacf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../allure-report/data/attachments/1bc69d3051119091.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/data/attachments/5a59a94121613889.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/data/attachments/9acae72b7421fbd5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/data/attachments/d00d6637828ec4a6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/data/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/data/packages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/data/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/data/test-cases/668f136898649c75.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/data/timeline.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/export/influxDbData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/history/history.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/widgets/duration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/widgets/severity.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../allure-report/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/widgets/status-chart.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/data/20c4206865e61876d777b3a60b7ead1ece58edb0.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/data/4023080b097c940d49eede3393adaffc237af585.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/data/6d2a6645c530da86bdc62dc756a16f55472ec4e9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/data/939b7a90354575b81cd480fe4740b2328b0de86b.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/data/976e90de8bc54c49fc6bee3451704b97d73bf80e.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../playwright-report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/assets/codeMirrorModule-3kZ8GVgK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/assets/defaultSettingsView-Ds-bson8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/codeMirrorModule.C3UTv-Ge.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/codicon.DCmgc-ay.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/defaultSettingsView.NYBT19Ch.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/index.CFOW-Ezb.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/index.CG3BNeDq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/playwright-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/snapshot.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/sw.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/uiMode.BatfzHMG.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/uiMode.BijnIl3L.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/uiMode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-report/trace/xtermModule.Beg8tuEN.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-results/.last-run.json" beforeDir="false" afterPath="$PROJECT_DIR$/../test-results/.last-run.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-results/login-Ninja-login-Test-new-chromium/error-context.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-results/login-Ninja-login-Test-new-chromium/test-failed-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-results/login-Ninja-login-Test-new-chromium/test-failed-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-results/login-Ninja-login-Test-new-chromium/trace.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-results/login-Ninja-login-Test-new-chromium/video-1.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-results/login-Ninja-login-Test-new-chromium/video.webm" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

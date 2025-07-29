@@ -37,6 +37,33 @@ export class NinjaPage {
 
   console.log(' Email and password submitted');
 
+
+  try {
+  // Wait 3 seconds
+  await this.page.waitForTimeout(3000);
+
+  
+  await this.page.screenshot({ path: 'screenshots/employee_id_field.png' });
+
+ 
+  const employeeInput = this.page.locator('//input[@aria-label="Employee ID"]');
+  await employeeInput.fill('FBS4825');
+  console.log('Employee ID entered');
+
+  
+  await this.page.waitForTimeout(3000);
+
+  
+  await employeeInput.press('Enter');
+  console.log('Password entered'); 
+
+  
+  await this.page.waitForTimeout(10000);
+} catch (e) {
+  console.log('******');
+  console.error(e);
+}
+
   await this.page.waitForTimeout(10000);
 }
 
@@ -50,6 +77,10 @@ async clickOnModule (module : string ){
   console.log(' Clicked on Quote Request module');
 
   attachment('Login Page Screenshot', screenshot1, 'image/png');
+
+}
+
+async mintproLogin(){
 
 }
 
