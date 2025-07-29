@@ -1,0 +1,5 @@
+Navigated to Ninja login page
+Google login popup opened
+ Email and password submitted
+Employee ID screen not shown. Continuing...
+✅ Clicked on Quote Request module

@@ -37,48 +37,41 @@ export class NinjaPage {
 
   console.log(' Email and password submitted');
 
+const employeeInput = this.page.locator('//input[@aria-label="Employee ID"]');
 
-  try {
-  // Wait 3 seconds
-  await this.page.waitForTimeout(3000);
-
-  
-  await this.page.screenshot({ path: 'screenshots/employee_id_field.png' });
-
- 
-  const employeeInput = this.page.locator('//input[@aria-label="Employee ID"]');
+if (await employeeInput.isVisible({ timeout: 3000 })) {
+  console.log('Employee ID screen appeared. Filling in...');
   await employeeInput.fill('FBS4825');
-  console.log('Employee ID entered');
-
-  
-  await this.page.waitForTimeout(3000);
-
-  
+  await this.page.waitForTimeout(1000);
   await employeeInput.press('Enter');
-  console.log('Password entered'); 
+  console.log('Employee ID submitted');
+} else {
+  console.log('Employee ID screen not shown. Continuing...');
+}
+
+await this.page.waitForTimeout(10000);
+
+  await this.page.waitForTimeout(10000);
+}
+
+async clickOnModule(module: string) {
+  const moduleLocator = this.page.locator(`a[data-auto="qis-module"]`);
 
   
-  await this.page.waitForTimeout(10000);
-} catch (e) {
-  console.log('******');
-  console.error(e);
-}
+  await moduleLocator.waitFor({ state: 'visible', timeout: 10000 });
 
-  await this.page.waitForTimeout(10000);
-}
+  
+  const preClickScreenshot = await this.page.screenshot();
+  attachment('Before Clicking Module', preClickScreenshot, 'image/png');
 
-async clickOnModule (module : string ){
-  await this.page.waitForTimeout(3000);
-  const screenshot1 = await this.page.screenshot();
-  attachment('Login Page Screenshot', screenshot1, 'image/png');
-  const moduleLocator = this.page.locator('a[data-auto="qis-module"]');
-  await moduleLocator.waitFor({ state: 'visible', timeout: 5000 });
   await moduleLocator.click();
-  console.log(' Clicked on Quote Request module');
+  console.log('✅ Clicked on Quote Request module');
 
-  attachment('Login Page Screenshot', screenshot1, 'image/png');
-
+  
+  const postClickScreenshot = await this.page.screenshot();
+  attachment('After Clicking Module', postClickScreenshot, 'image/png');
 }
+
 
 async mintproLogin(){
 
