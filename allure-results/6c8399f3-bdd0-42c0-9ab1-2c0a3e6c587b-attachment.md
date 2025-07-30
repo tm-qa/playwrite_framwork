@@ -1,0 +1,42 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - button:
+    - link:
+      - /url: "#"
+  - button "Notifications":
+    - link "Notifications":
+      - /url: "#"
+      - img "Notifications":
+        - img
+  - button "View Profile"
+- link "turtlemint":
+  - /url: "#"
+  - img "turtlemint"
+- heading "Welcome Automation Testing" [level=3]
+- link "Partner Lead Management":
+  - /url: /partner-lead
+- link "Partner Management":
+  - /url: /partner
+- link "Quote Request":
+  - /url: /qis
+- link "Policy Issuance":
+  - /url: /policy-issuance
+- link "MIS":
+  - /url: https://ninja.sanity.turtle-feature.com/ninja-v2/mis/allrecords
+- link "Renewals":
+  - /url: https://ninja.sanity.turtle-feature.com/renewal-dashboard/dashboard
+- link "Payouts":
+  - /url: https://ninja.sanity.turtle-feature.com/payouts-dashboard
+- link "Life Ops":
+  - /url: /life-ops
+- link "Claims":
+  - /url: https://claims.sanity.turtle-feature.com?token=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ0dXJ0bGVtaW50IiwiaWF0IjoxNzUzODcwODcyLCJleHAiOjE3NTM5NTcyNzIsIkMiOiJhZG1pbiIsIkQiOm51bGwsIlVJIjoiNjM2OWY5YWVjNWY2MDg2NWYyY2Q1MWYwIiwiRSI6ImF1dG9tYXRpb250ZXN0aW5nQHR1cnRsZW1pbnQuY29tIiwiU0kiOiJBIiwiVUEiOiJNb3ppbGxhLzUuMCAoTWFjaW50b3NoOyBJbnRlbCBNYWMgT1MgWCAxMC4xNTsgcnY6MTQwLjApIEdlY2tvLzIwMTAwMTAxIEZpcmVmb3gvMTQwLjAiLCJSQSI6IjE4Mi43MC4xMS4yNSwgMTMwLjE3Ni4xMDQuMTE2LDE4Mi43MC4xMS4yNSJ9.z-nFaWnuh-skPhcTWkoM4kI5eJq2FbFzg_wl818GTZE
+- button "Chat with DP"
+- button "Logout"
+- link "Privacy Policy":
+  - /url: /privacy-policy
+- link:
+  - /url: "#"
+```

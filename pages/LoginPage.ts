@@ -39,17 +39,22 @@ attachment('Login Page Screenshot', screenshot, 'image/png');
 await this.page.waitForTimeout(10000);
 await popup.waitForSelector('//input[@aria-label="Employee ID"]', { timeout: 10000 });
 await popup.locator('//input[@aria-label="Employee ID"]').fill('FBS4825');
+console.log(' empl id submitted');
 attachment('Login Page Screenshot', screenshot, 'image/png');
 await popup.locator('//span[text()="Next"]').click();
-await this.page.waitForTimeout(10000);
-attachment('Login Page Screenshot', screenshot, 'image/png');
+console.log(' empl id submitted and next button');
+await expect(this.page.locator('//img[@src="images/logos/turtlemint_ninja-logo.svg"]')).toBeVisible({
+  timeout: 15000  
+});
+console.log(' ninja dashboard');
+
+
 
 }
 
+
 async clickOnModule(module: string) {
   const moduleLocator = this.page.locator(`a[data-auto="qis-module"]`);
-
-  
   await moduleLocator.waitFor({ state: 'visible', timeout: 10000 });
 
   
@@ -57,7 +62,7 @@ async clickOnModule(module: string) {
   attachment('Before Clicking Module', preClickScreenshot, 'image/png');
 
   await moduleLocator.click();
-  console.log('✅ Clicked on Quote Request module');
+  console.log(' Clicked on Quote Request module');
 
   
   const postClickScreenshot = await this.page.screenshot();
