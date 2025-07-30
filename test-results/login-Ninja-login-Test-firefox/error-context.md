@@ -1,15 +1,15 @@
 # Page snapshot
 
 ```yaml
-- banner:
-  - img "menu"
-  - img:
-    - img "notification icon"
-  - img "search"
-  - textbox "Search by Registration number, Request Id, POSP name"
-  - button "Ninja V1"
-- tablist:
-  - tab "All Quotes"
-  - tab "Quote Request" [selected]
-- tabpanel "Quote Request"
+- link "turtlemint Ninja Dashboard":
+  - /url: "#"
+  - img "turtlemint Ninja Dashboard"
+- heading "Welcome to Ninja" [level=3]
+- paragraph: New insurance journal and audit system
+- link "Google":
+  - /url: "#"
+  - img "Google"
+- link "Powered by MintPro":
+  - /url: "#"
+  - img "Powered by MintPro"
 ```

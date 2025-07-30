@@ -37,22 +37,50 @@ export class NinjaPage {
 attachment('Login Page Screenshot', screenshot, 'image/png');
   console.log(' Email and password submitted');
 await this.page.waitForTimeout(10000);
-await popup.waitForSelector('//input[@aria-label="Employee ID"]', { timeout: 10000 });
+
+
+await popup.waitForSelector('//input[@aria-label="Employee ID"]', { timeout: 15000 });
 await popup.locator('//input[@aria-label="Employee ID"]').fill('FBS4825');
-console.log(' empl id submitted');
-attachment('Login Page Screenshot', screenshot, 'image/png');
+console.log('Employee ID submitted');
+
 await popup.locator('//span[text()="Next"]').click();
-console.log(' empl id submitted and next button');
-await expect(this.page.locator('//img[@src="images/logos/turtlemint_ninja-logo.svg"]')).toBeVisible({
-  timeout: 15000  
-});
-console.log(' ninja dashboard');
-attachment('ninja dashboard', screenshot, 'image/png');
-await expect(this.page.locator('//a[@data-auto="qis-module"]')).toBeVisible({
-  timeout: 15000  
-})
-console.log(' ninja dashboard view');
-attachment('dahsboard view', screenshot, 'image/png');
+console.log('Clicked next after Employee ID');
+
+// Wait for popup to close
+await popup.waitForEvent('close', { timeout: 15000 });
+console.log('Popup closed and focus returned to main page');
+
+// Bring main page to front and wait for network idle
+await this.page.bringToFront();
+await this.page.waitForLoadState('networkidle');
+
+// Optional wait for a welcome/header element that usually appears after login
+try {
+  await this.page.waitForSelector('//h2[contains(text(), "Welcome")]', { timeout: 20000 });
+  console.log('Welcome text found on dashboard');
+} catch (e) {
+  console.warn('Welcome text not found. Continuing...');
+}
+
+// Confirm logo is visible
+await expect(this.page.locator('//img[@src="images/logos/turtlemint_ninja-logo.svg"]')).toBeVisible({ timeout: 20000 });
+console.log('Ninja dashboard loaded');
+
+await this.page.pause()
+// Take screenshot before final check
+const finalScreenshot = await this.page.screenshot();
+attachment('Ninja Dashboard Screenshot', finalScreenshot, 'image/png');
+
+// Dump HTML in console for debugging (Jenkins logs)
+console.log(await this.page.content());
+
+// Final confirmation – wait robustly for QIS module
+const qisLocator = this.page.locator('//a[@data-auto="qis-module"]');
+await qisLocator.waitFor({ state: 'visible', timeout: 20000 });
+await expect(qisLocator).toBeVisible();
+console.log('Ninja dashboard view complete');
+
+ 
 }
 
 
