@@ -36,21 +36,10 @@ export class NinjaPage {
   await popup.locator('#passwordNext').click();
 
   console.log(' Email and password submitted');
-
-try {
-  const empIdInput = await this.page.locator('input[placeholder="Enter your employee ID"]');
-  await empIdInput.waitFor({ state: 'visible', timeout: 5000 });
-  await empIdInput.fill('FBS4825');
-  await this.page.getByRole('button', { name: 'Next' }).click();
-  console.log(' Employee ID entered successfully.');
-} catch (e) {
-  console.log('Employee ID input not found or not visible.');
-  const screenshot = await this.page.screenshot();
-  attachment('Emp ID Screen Failure', screenshot, 'image/png');
-}
-
-
-
+await this.page.waitForTimeout(10000);
+await popup.waitForSelector('//input[@aria-label="Employee ID"]', { timeout: 10000 });
+await popup.locator('//input[@aria-label="Employee ID"]').fill('FBS4825');
+await popup.locator('//span[text()="Next"]').click();
 await this.page.waitForTimeout(10000);
 
   await this.page.waitForTimeout(10000);
