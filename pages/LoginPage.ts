@@ -48,7 +48,7 @@ await expect(this.page.locator('//img[@src="images/logos/turtlemint_ninja-logo.s
 });
 console.log(' ninja dashboard');
 
-attachment('Login Page Screenshot', screenshot, 'image/png');
+attachment('ninja dashboard', screenshot, 'image/png');
 }
 
 
