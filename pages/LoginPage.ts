@@ -34,15 +34,16 @@ export class NinjaPage {
   await popup.waitForSelector('input[name="Passwd"]', { timeout: 10000 });
   await popup.locator('input[name="Passwd"]').fill(password);
   await popup.locator('#passwordNext').click();
-
+attachment('Login Page Screenshot', screenshot, 'image/png');
   console.log(' Email and password submitted');
 await this.page.waitForTimeout(10000);
 await popup.waitForSelector('//input[@aria-label="Employee ID"]', { timeout: 10000 });
 await popup.locator('//input[@aria-label="Employee ID"]').fill('FBS4825');
+attachment('Login Page Screenshot', screenshot, 'image/png');
 await popup.locator('//span[text()="Next"]').click();
 await this.page.waitForTimeout(10000);
+attachment('Login Page Screenshot', screenshot, 'image/png');
 
-  await this.page.waitForTimeout(10000);
 }
 
 async clickOnModule(module: string) {
