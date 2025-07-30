@@ -48,13 +48,17 @@ await expect(this.page.locator('//img[@src="images/logos/turtlemint_ninja-logo.s
 });
 console.log(' ninja dashboard');
 
-
-
+attachment('Login Page Screenshot', screenshot, 'image/png');
 }
 
 
 async clickOnModule(module: string) {
-  const moduleLocator = this.page.locator(`a[data-auto="qis-module"]`);
+
+await expect(this.page.locator('//a[@data-auto="qis-module"]')).toBeVisible({
+  timeout: 15000  
+});
+
+  const moduleLocator = this.page.locator('//a[@data-auto="qis-module"]');
   await moduleLocator.waitFor({ state: 'visible', timeout: 10000 });
 
   
