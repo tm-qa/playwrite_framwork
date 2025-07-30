@@ -1,0 +1,8 @@
+Navigated to Ninja login page
+Google login popup opened
+ Email and password submitted
+ empl id submitted
+ empl id submitted and next button
+ ninja dashboard
+ ninja dashboard view
+ Clicked on Quote Request module

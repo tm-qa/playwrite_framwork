@@ -47,8 +47,12 @@ await expect(this.page.locator('//img[@src="images/logos/turtlemint_ninja-logo.s
   timeout: 15000  
 });
 console.log(' ninja dashboard');
-
 attachment('ninja dashboard', screenshot, 'image/png');
+await expect(this.page.locator('//a[@data-auto="qis-module"]')).toBeVisible({
+  timeout: 15000  
+})
+console.log(' ninja dashboard view');
+attachment('dahsboard view', screenshot, 'image/png');
 }
 
 

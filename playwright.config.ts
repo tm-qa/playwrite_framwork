@@ -32,7 +32,8 @@ export default defineConfig({
       use: {
         browserName: 'firefox',
         baseURL: process.env.BASE_URL,
-        headless: isCI,
+        headless: true,
+        // headless: isCI,
         screenshot: 'only-on-failure',
         video: 'retain-on-failure',
         trace: 'retain-on-failure',
