@@ -1,0 +1,5 @@
+Navigated to Ninja login page
+Google login popup opened
+ Email and password submitted
+Employee ID submitted
+Clicked next after Employee ID
